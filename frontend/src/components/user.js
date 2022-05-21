@@ -19,7 +19,7 @@ const UserItem = ({user}) => {
     )
 }
 
-const UserList = ({user}) => {
+const UsersList = ({users}) => {
     return (
         <table>
             <th>
@@ -34,8 +34,8 @@ const UserList = ({user}) => {
             <th>
                 email
             </th>
-                {user.map((user) => <UserItem user={user} />)}
+                {users.map((user) => <UserItem user={user} />)}
         </table>
     )
 }
-    export default UserList
+    export default UsersList
